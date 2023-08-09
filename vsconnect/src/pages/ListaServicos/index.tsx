@@ -35,6 +35,7 @@ function ListaServicos() {
     }
     return (
         <div>
+            <div id="sombra"></div>
             <header>
                 <div className="container header_conteudo">
                     <a className="menu_barras" id="menu_barras" aria-label="abrir menu" aria-expanded="false" aria-controls="menu_links" aria-haspopup="true" onClick={mostrarMenu} href="#"><div className="barras"></div></a>
@@ -60,7 +61,7 @@ function ListaServicos() {
                 <div className="container container_lista_servicos">
                     <div className="lista_servicos_conteudo">
                         <h1>Lista de Serviços</h1>
-                        <hr>
+                        <hr/>
                             <form method="post">
                                 <div className="wrapper_form">
                                     <label htmlFor="busca">Procurar serviços</label>
