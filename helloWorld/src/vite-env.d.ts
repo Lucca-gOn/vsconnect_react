@@ -1,0 +1,2 @@
+/// <reference types="vite/client" />
+// Ajudou na configuração do vite Vite é um servidor de desenvolvimento local escrito por Evan You e usado por padrão pelo Vue e para modelos de projeto React. Tem suporte para TypeScript e JSX.
