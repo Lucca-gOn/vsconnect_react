@@ -1,17 +1,27 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function CardServicos(props: any) {
+
+    function verificarListaTechs() {
+        if (typeof props.listaTechs === "string") {
+            return JSON.parse(props.listaTechs);
+        } else {
+            return props.listaTechs;
+        }
+    }
+
     return (
         <>
             <div className="servico">
                 <div className="topo_servico">
-                    <h3>{props.titulo}</h3>
+                    <Link to={'/servicos/'+ props.idServicos}><h3>{props.titulo}</h3></Link> 
                     <span>{props.proposta}</span>
                 </div>
                 <p>{props.descricao}</p>
                 <div className="techs">
                     {
-                        props.listaTechs.map((tech: string, indice: number) => {
+                        verificarListaTechs().map((tech: string, indice: number) => {
                             return <span key={indice}>{tech}</span>
                         })
                     }
@@ -21,8 +31,6 @@ function CardServicos(props: any) {
                     <span>React</span> */}
                 </div>
             </div>
-
-
         </>
     )
 }

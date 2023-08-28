@@ -33,6 +33,8 @@ function Footer() {
                         <Link to={"/"}><li>Home</li></Link>
                         <Link to={"/lista/servicos"}><li>Listar Serviços</li></Link>
                         <Link to={"/lista/devs"}><li>Lista Desenvolvedores</li></Link>
+                        <Link to={"/cadastro/servico"}><li>Cadastro Servico</li></Link>
+                        <Link to={"/cadastro/usuario"}><li>Cadastro Usuario</li></Link>
                         <li>Cadastrar Cliente</li>
                         <li>Cadastrar Desenvolvedor</li>
                     </ul>
